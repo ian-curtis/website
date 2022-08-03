@@ -1,0 +1,52 @@
+:root {
+  font-family: "Cambria", 'Times New Roman', 'Times', serif;
+}
+
+header {
+  background-color: #01556d;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+  font-size: 25px;
+}
+
+header li a {
+  color: #E3E3E3;
+  text-decoration: none;
+}
+
+header a:hover{
+  color: #DF6096;
+}
+
+header h1 {
+  margin-left: 40px;
+  color: #E3E3E3;
+  font-size: 50px
+}
+
+header strong {
+  color: #DF6096;
+}
+
+body {
+  margin-top: 100px;
+  padding: 30px;
+}
+
+abbr {
+  text-decoration: none;
+}
