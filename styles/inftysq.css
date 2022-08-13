@@ -1,0 +1,70 @@
+/* Override header and page settings from main */
+a {
+  color: #436825;
+}
+
+a:hover {
+  color: #bc7f3d;
+}
+
+header {
+  background-color: #4d807a;
+}
+
+header h1{
+  color: #d4dbe1;
+}
+
+header li a {
+  color: #d4dbe1;
+  text-decoration: none;
+}
+
+header a:hover{
+  color: black;
+}
+
+/* Add custom button styles */
+
+button {
+  background-color: #b95637;
+}
+
+button a {
+  color: #edebeb;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+button a:hover {
+  color: #edebeb;
+}
+
+button:hover {
+  background-color: #43cfad;
+}
+
+/* Track Listing styles */
+.track-list {
+  text-align: center;
+}
+
+.track-list ol {
+  display: inline-block;
+  text-align: left;
+}
+
+.track-list li {
+  padding-bottom: 5px;
+}
+
+/* Center all lyrics */
+.lyrics {
+  text-align: center;
+}
+
+/* Change color of chorus */
+
+.chorus {
+  color: #4d807a;
+}

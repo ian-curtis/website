@@ -1,0 +1,65 @@
+.mflbupdate {
+  display: block;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  border-style: dashed;
+  border: 3px dashed black;
+  border-color: #820c0c;
+}
+
+/* Override header and page settings from main */
+a {
+  color: #820c0c;
+}
+
+a:hover {
+  color: black;
+}
+
+header {
+  background-color: #707070;
+}
+
+header h1{
+  color: #e6e6e6;
+}
+
+header li a {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+header a:hover{
+  color: black;
+}
+
+/* Add custom button styles */
+
+button {
+  background-color: black;
+}
+
+button a {
+  color: #edebeb;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+button a:hover {
+  color: #edebeb;
+}
+
+button:hover {
+  background-color: #707070;
+}
+
+/* lyrics styles */
+
+.lyrics {
+  text-align: center;
+}
+
+.chorus {
+  color: #820c0c;
+}

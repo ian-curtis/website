@@ -9,12 +9,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/music.css">
+    <link rel="stylesheet" href="../../styles/sub-aff.css">
     <!-- <script src="my-js-file.js" defer></script> -->
     <title>Ian Curtis - Merci mon ami</title>
   </head>
   <body>
     <header>
-      <h1>Ian Curtis</h1>
+      <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ian Curtis</a></h1>
     <nav>
       <ul>
         <li><a href="../../">Home</a></li>
@@ -27,18 +29,28 @@
   </header>
 
     <main>
-      <h2>About the Track</h2>
-      <p>
-        The title translates as <q>Thank you my friend</q> where the friend in this case is the French language itself. I have enjoyed learning the language in high school and college and thought that it deserved its own song.
-      </p>
-      <p>
-        I almost quit French after my two-year requirement for high school. My high school teacher convinced me otherwise (and I thank her for it) and I ended up majoring in French in college.
-      </p>
+      <div class="track-container">
+        <div class="about-track">
+          <h2>About the Track</h2>
+          <p>
+            The title translates as <q>Thank you my friend</q> where the friend in this case is the French language itself. I have enjoyed learning the language in high school and college and thought that it deserved its own song.
+          </p>
+          <p>
+            I almost quit French after my two-year requirement for high school. My high school teacher convinced me otherwise (and I thank her for it) and I ended up majoring in French in college.
+          </p>
+        </div>
+        <div class='back-to-album'>
+          <img src="../../images/album-art/subliminal_affection.png" alt="Sublminal Affection album art"/>
+          <button>
+            <a href="../subliminal-affection">Back to album</a>
+          </button>
+        </div>
+      </div>
 
       <div class="lyrics">
         <h2>Lyrics</h2>
-        <div class="row">
-          <div class="column">
+        <div class="mma-row">
+          <div class="mma-column">
             <h3>French</h3>
             <p lang="fr">
               Merci mon ami<br>
@@ -46,71 +58,122 @@
               Vous ne le savez pas,<br>
               Mais vous avez changé ma vie
             </p>
-            <p>
+            <p lang="fr">
               Je vous ai presque perdu<br>
               Main nous étions sauvés<br>
               Par quelqu'un d'autre que j'aime<br>
               Qui m'a aidé à trouver moi-même
             </p>
-            <p>
+            <p class="chorus" lang="fr">
               Grâce à vous,<br>
               Je sais où je vais<br>
               Je ne trouve pas aucun défaut en vous
             </p>
-            <p>
+            <p class="chorus" lang="fr">
               J'ai envie de passer<br>
               La reste de ma vie avec vous<br>
               Rien ne pourra nous séparer
             </p>
-            <p>
+            <p lang="fr">
               Vous êtes une œuvre d'art<br>
               Vous êtes tout ce que je veux<br>
               Vous êtes beau, vous êtes parfait<br>
               Vous êtes le secret du bonheur éternel
             </p>
-            <p>
+            <p lang="fr">
               J'ai hâte de voir<br>
               Ce que nous ferons ensemble<br>
               Ces aventures à venir<br>
               Seront formidable
             </p>
-            <p>
+            <p class="chorus" lang="fr">
               Grâce à vous,<br>
               Je sais où je vais<br>
               Je ne trouve pas aucun défaut en vous
             </p>
-            <p>
+            <p class="chorus" lang="fr">
               J'ai envie de passer<br>
               La reste de ma vie avec vous<br>
               Rien ne pourra nous séparer
             </p>
-            <p>
+            <p lang="fr">
               Vous faites sortir le meilleur de moi-même<br>
               Et je veux partager votre beauté
             </p>
-            <p>
+            <p class="chorus" lang="fr">
               Grâce à vous,<br>
               Je sais où je vais<br>
               Je ne trouve pas aucun défaut en vous
             </p>
-            <p>
+            <p class="chorus" lang="fr">
               J'ai envie de passer<br>
               La reste de ma vie avec vous<br>
               Rien ne pourra nous séparer
             </p>
           </div>
-          <div class="column">
+          <div class="mma-column">
             <h3>English</h3>
+            <p>
+              Thank you my friend<br>
+              For everything you are<br>
+              You don't know it,<br>
+              But you have changed my life
+            </p>
+            <p>
+              I almost lost you<br>
+              But we were saved<br>
+              By someone else to whom I am thankful<br>
+              Who helped me to find myself
+            </p>
+            <p class="chorus">
+              Thanks to you<br>
+              I know where I am going<br>
+              I cannot find any flaws in you
+            </p>
+            <p class="chorus">
+              I feel like spending<br>
+              The rest of my life with you<br>
+              Nothing will ever be able to separate us
+            </p>
+            <p>
+              You are a work of art<br>
+              You are everything I want<br>
+              You are beautiful, you are perfect<br>
+              You are the secret to eternal joy
+            </p>
+            <p>
+              I cannot wait to see<br>
+              What we will do together<br>
+              This adventures yet to come<br>
+              Will be incredible
+            </p>
+            <p class="chorus">
+              Thanks to you<br>
+              I know where I am going<br>
+              I cannot find any flaws in you
+            </p>
+            <p class="chorus">
+              I feel like spending<br>
+              The rest of my life with you<br>
+              Nothing will ever be able to separate us
+            </p>
+            <p>
+              You bring out the best in me<br>
+              And I wish to share your beauty
+            </p>
+            <p class="chorus">
+              Thanks to you<br>
+              I know where I am going<br>
+              I cannot find any flaws in you
+            </p>
+            <p class="chorus">
+              I feel like spending<br>
+              The rest of my life with you<br>
+              Nothing will ever be able to separate us
+            </p>
           </div>
         </div>
       </div>
-
-      <aside class='back-to-album'>
-        <img src="../../images/album-art/subliminal_affection.png" alt="Sublminal Affection album art"/>
-        <p>
-          <a href="../subliminal-affection">Back to album</a>
-        </p>
-      </aside>
       
     </main>
 

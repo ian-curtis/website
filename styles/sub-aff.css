@@ -1,0 +1,111 @@
+/* Override header and page settings from main */
+a {
+  color: #80441a;
+}
+
+a:hover {
+  color: #574f4c;
+}
+
+header {
+  background-color: #474a4f;
+}
+
+header h1{
+  color: #d4dbe1;
+}
+
+header li a {
+  color: #d4dbe1;
+  text-decoration: none;
+}
+
+header a:hover{
+  color: #cc7a35;
+}
+
+
+
+/* Add custom button styles */
+
+button {
+  background-color: #a26932;
+}
+
+button a {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+button a:hover {
+  color: black;
+}
+
+button:hover {
+  background-color: #d68438;
+}
+
+/* Track Listing styles */
+.track-list {
+  text-align: center;
+}
+
+.track-list ol {
+  display: inline-block;
+  text-align: left;
+}
+
+.track-list li {
+  padding-bottom: 5px;
+}
+
+/* Center all lyrics */
+.lyrics {
+  text-align: center;
+}
+
+/* Change color of chorus */
+
+.chorus {
+  color: #80441a;
+}
+
+/* Merci mon ami two-column lyrics */
+
+.mma-row {
+  display: flex;
+}
+
+.mma-column {
+  flex: 50%;
+}
+
+h3 {
+  font-style: italic;
+}
+
+
+
+/* Sadie Rose Gallery styles */
+
+.sadie-row {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: black;
+}
+
+/* Create four equal columns that sits next to each other */
+.sadie-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.sadie-column img {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+  width: 100%;
+}
