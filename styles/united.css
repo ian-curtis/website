@@ -1,0 +1,42 @@
+/* Override header and page settings from main */
+a {
+  color: #26273d;
+}
+
+a:hover {
+  color: #333a4f;
+}
+
+header {
+  background-color: #333a4f;
+}
+
+header li a {
+  color: #E3E3E3;
+  text-decoration: none;
+}
+
+header a:hover{
+  color: #af8d6c;
+}
+
+/* Add custom button styles */
+
+button {
+  background-color: #a5785e;
+}
+
+button a {
+  color: #edebeb;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+button a:hover {
+  color: #edebeb;
+}
+
+button:hover {
+  background-color: #ae9473;
+}
+

@@ -1,0 +1,133 @@
+/* Hero Image for CV page */
+
+.hero-image-cv {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/grand_canyon.JPG");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 500px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #E3E3E3;
+}
+
+.cv-content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.cv-content-trad {
+  padding: 40px;
+  width: 1000px;
+}
+
+.cv-content-trad li {
+  padding-bottom: 3px;
+}
+
+.cv-intro {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 650px;
+  text-align: center;
+  border: 3px dotted black;
+}
+
+.cv-flex-wrap {
+  max-width: 1450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 10px;
+}
+
+.cv-card-wrap {
+  flex: 0 0 32.8%;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 200px;
+  padding: 3px;
+  background-color: black;
+}
+
+@media (max-width: 800px) {
+  .cv-card-wrap {
+    flex-direction: column;
+    flex: auto;
+  }
+}
+
+.cv-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  text-align: center;
+  perspective: 1000px;
+}
+
+.cv-card-front, .cv-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cv-card-wrap:hover .cv-card {
+  transform: rotateY(180deg);
+}
+
+/* Styles for front of cards */
+.cv-card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #1E7E8A; */
+  background-color: rgba(30, 126, 138, .85);
+  /* background-color: rgba(9, 117, 99, .7); */
+}
+
+.cv-card-edge {
+  background-color: #5a5a5a;
+}
+
+/* Styles for back of cards */
+.cv-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #949494;
+}
+
+.cv-card-back p {
+  width: 375px;
+}
+
+.p-not-first {
+  margin-top: -1em;
+}

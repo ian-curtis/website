@@ -1,17 +1,21 @@
 :root {
-  font-family: "Cambria", 'Times New Roman', 'Times', serif;
+  font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
 }
 
+/* header */
+
 header {
-  background-color: #01556d;
+  /* background-color: #0A737E; */
+  background-color: black;
   position: fixed;
   top: 0px;
   left: 0;
   right: 0;
   height: 100px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 99;
 }
 
 header * {
@@ -20,7 +24,7 @@ header * {
 
 header li {
   margin: 20px;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 header li a {
@@ -29,24 +33,130 @@ header li a {
 }
 
 header a:hover{
-  color: #DF6096;
+  color: #EA89DC;
 }
 
 header h1 {
   margin-left: 40px;
   color: #E3E3E3;
-  font-size: 50px
+  font-size: 50px;
 }
 
-header strong {
-  color: #DF6096;
+.active-page {
+  font-weight: bold;
+  color: #EA89DC;
 }
+
+
+
+/* Main Content */
 
 body {
-  margin-top: 100px;
-  padding: 30px;
+  margin: 0px;
+  padding: 0px;
+  
 }
 
 abbr {
   text-decoration: none;
+}
+
+a {
+  color: #097563;
+}
+
+a:hover {
+  color: #095575;
+}
+
+h1 a {
+  color: #E3E3E3;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: #E3E3E3;
+  cursor: default;
+}
+
+main {
+  background-color: #b0b0b0;
+  padding: 40px;
+  font-size: 18px;
+}
+
+
+/* Hero Image for home page */
+
+.hero-image-home {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/me_bw.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: 60% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 500px;
+}
+
+.hero-text-home {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text-home h1 {
+  font-style: italic;
+  font-size: 50px;
+  color: #E3E3E3;
+}
+
+
+
+
+
+
+
+
+/* About page */
+
+.about-me-content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Hero Image About page */
+
+.hero-image-about {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/me.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 500px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #E3E3E3;
 }

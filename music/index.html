@@ -16,14 +16,14 @@
   <body>
     <div>
     <header>
-      <h1>Ian Curtis</h1>
+      <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ian Curtis</a></h1>
       <nav>
         <ul>
           <li><a href="../">Home</a></li>
           <li><a href="../about">About</a></li>
           <li><a href="../cv"><abbr title="Curriculum Vitae">CV</abbr></a></li>
           <li><a href="http://www.github.com/ian-curtis">GitHub</a></li>
-          <li><strong>Music</strong></li>
+          <li class="active-page">Music</li>
         </ul>
       </nav>
     </header>
@@ -34,35 +34,43 @@
       <p>
         Yep, I make music, too! Click on the images below to learn more about the music I create.
       </p>
-      
-      <p float="left">
-        <a href="subliminal-affection/">
-          <img alt='Subliminal Affection album art' src="/images/album-art/subliminal_affection.png" width="30%" />
-        </a>
-        <a href="singles/united.html">
-          <img alt='United album art' src="/images/album-art/united.png" width="30%" />
-        </a>
-        <a href="singles/mflb-new.html">
-          <img alt= 'March Forward, Look Back (new version) album art' src="/images/album-art/MFLBnew.png" width="30%" />
-        </a>
-      </p>
-      
-      <p float="left">
-        <a href="singles/when-all-seems-lost.html">
-          <img alt='When All Seems Lost album art' src="/images/album-art/when_all_seems_lost.png" width="30%" />
-        </a>
-        <a href="singles/bleeding-out.html">
-          <img alt='Bleeding Out (Imagine Dragons cover) album art' src="/images/album-art/bleeding_out.png" width="30%" />
-        </a>
-        <a href="infinity-squared">
-          <img alt='Infinity Squared album art' src="/images/album-art/infsq.png" width="30%" />
-        </a>
-      </p>
-      <aside>
-        <p>
-          Want to know the music I like to listen to? Check out my profile and playlists on Spotify!
-        </p>
-      </aside>
+      <div class="sidebar-wrapper">
+        <div class="art-column">
+          <div class="art-row">
+            <a href="subliminal-affection/">
+              <img alt='Subliminal Affection album art' src="/images/album-art/subliminal_affection.png" />
+            </a>
+            <a href="singles/united.html">
+              <img alt='United album art' src="/images/album-art/united.png" />
+            </a>
+            <a href="singles/mflb-new.html">
+              <img alt= 'March Forward, Look Back (new version) album art' src="/images/album-art/MFLBnew.png" />
+            </a>
+          </div>
+          <div class="art-row">
+            <a href="singles/when-all-seems-lost.html">
+              <img alt='When All Seems Lost album art' src="/images/album-art/when_all_seems_lost.png" />
+            </a>
+            <a href="singles/bleeding-out.html">
+              <img alt='Bleeding Out (Imagine Dragons cover) album art' src="/images/album-art/bleeding_out.png" />
+            </a>
+            <a href="infinity-squared">
+              <img alt='Infinity Squared album art' src="/images/album-art/infsq.png" />
+            </a>
+          </div>
+        </div>
+        <div class="sidebar">
+          <p>
+            Want to have a listen to my music? Check out the platforms below!
+          </p>
+          <!-- <div class="buttons">
+            <button id="button-spotify" type="button">Spotify</button>
+            <button id="button-apple" type="button">Apple Music</button>
+            <button id="button-youtube" type="button">YouTube</button>
+            <button id="button-deezer" type="button">Deezer</button>
+          </div> -->
+        </div>
+      </div>
     </main>
 
     <footer>
