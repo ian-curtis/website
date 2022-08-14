@@ -120,12 +120,6 @@ main {
 }
 
 
-
-
-
-
-
-
 /* About page */
 
 .about-me-content {
@@ -159,4 +153,17 @@ main {
   transform: translate(-50%, -50%);
   font-size: 50px;
   color: #E3E3E3;
+}
+
+.access-content {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+}
+
+
+/* Footer Styles */
+
+footer {
+  background-color: #787878;
 }
