@@ -5,7 +5,6 @@
 /* header */
 
 header {
-  /* background-color: #0A737E; */
   background-color: black;
   position: fixed;
   top: 0px;
@@ -36,10 +35,18 @@ header a:hover {
   color: #EA89DC;
 }
 
-header h1 {
+header h1 a {
   margin-left: 40px;
-  color: #E3E3E3;
+  /* color: #E3E3E3; */
+  color: #099392;
   font-size: 50px;
+  text-decoration: none;
+
+}
+
+h1 a:hover {
+  color: #099392;
+  cursor: default;
 }
 
 .active-page {
@@ -67,16 +74,6 @@ a {
 
 a:hover {
   color: #095575;
-}
-
-h1 a {
-  color: #E3E3E3;
-  text-decoration: none;
-}
-
-h1 a:hover {
-  color: #E3E3E3;
-  cursor: default;
 }
 
 main {
@@ -187,6 +184,7 @@ footer {
 
 .footer-links a {
   color: #720055;
+  text-decoration: none;
 }
 
 .footer-links a:hover {
@@ -263,11 +261,17 @@ footer {
   color: #1DB954;
 }
 
-.fa-apple {
-  color: #c2cad7;
+.apple-music img{
+  display: block;
+  margin-left: 1px;
+  margin-right: 2px;
+  padding: 1px;
+  width: 90%;
+  height: 29px;
+  
 }
 
-.fa-apple:hover {
+.apple-music:hover {
   color: #c2cad7;
   opacity: .7;
 }
