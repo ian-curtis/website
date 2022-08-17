@@ -26,22 +26,17 @@ header a:hover{
 
 /* Add custom button styles */
 
-button {
-  background-color: #1c3a38;
-}
 
-button a {
+.back-button {
   color: #edebeb;
   text-decoration: none;
+  background-color: #1c3a38;
   font-size: 17px;
 }
 
-button a:hover {
-  color: #edebeb;
-}
-
-button:hover {
+.back-button:hover {
   background-color: #345e63;
+  color: #edebeb;
 }
 
 /* lyrics styles */

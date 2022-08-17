@@ -6,11 +6,26 @@ main {
   padding-top: 100px;
 }
 
+h1 {
+  text-align: center;
+}
+
+
 /* Main music page album art grid */
+
+.art-grid-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+}
+
 .art-row {
   display: flex;
   width: 910px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .art-column {
@@ -25,9 +40,35 @@ main {
   height: 300px;
 }
 
-.sidebar-wrapper {
-  height: 650px;
+.music-container {
+  display: flex;
 }
+
+.music-sidebar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.music-sidebar-box {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.about-music h1 {
+  text-align: center;
+}
+
+.about-music {
+  padding-right: 20px;
+  margin-right: 35px;
+  max-width: 1000px;
+
+}
+
 
 
 /* individual track pages */
@@ -43,12 +84,13 @@ main {
   text-align: center;
 }
 
+.about-track h1 {
+  text-align: center;
+}
+
 .about-track {
   padding-right: 20px;
   margin-right: 35px;
-  /* border-style: solid;
-  border: none;
-  border-right: 2px solid black; */
 }
 
 .back-to-album img {
@@ -56,46 +98,26 @@ main {
   width: 300px;
 }
 
-.back-to-album button {
+.lyrics {
+  padding-top: 15px;
+}
+
+.back-button {
+  padding: 14px 14px;
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+  text-align: center;
   border-style: solid;
   border: 2px solid black;
   border-radius: 5px;
-  padding: 14px 14px;
-  margin-top: 5px;
 }
 
-/* .buttons button {
-  border: 1px solid black;
-  color: black;
-  padding: 20px 24px;
-  cursor: pointer;
-  width: 20%;
-  display: block;
-  font-size: 20px;
-  margin: auto;
-  border-radius: 7px;
+.spotify-play {
+  padding-top: 15px;
+  padding-bottom: 3px;
 }
-
-button + button {
-  margin-top: 5px !important;
-}
-
-#button-spotify {
-  background-color: #1DB954;
-}
-
-#button-apple {
-  background-color: #fa57c1;
-}
-
-#button-youtube{
-  background-color: #FF0000;
-}
-
-#button-deezer{
-  background-color: #00c7f2;
-}
-
-.buttons button:hover {
-  background-color: gray;
-} */

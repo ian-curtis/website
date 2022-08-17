@@ -22,21 +22,16 @@ header a:hover{
 
 /* Add custom button styles */
 
-button {
-  background-color: #d4843d;
-}
 
-button a {
+.back-button {
   color: #edebeb;
-  text-decoration: none;
   font-size: 17px;
+  text-decoration: none;
+  background-color: #703704;
 }
 
-button a:hover {
+.back-button:hover {
+  background-color: #9e490c;
   color: #edebeb;
-}
-
-button:hover {
-  background-color: #d49161;
 }
 
