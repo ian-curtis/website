@@ -1,0 +1,36 @@
+/* About page */
+
+/* Hero Image About page */
+
+.hero-image-about {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/me.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 500px;
+}
+
+.about-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed black;
+}
+
+.about-me-content {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.me-pic img {
+  width: 70%;
+  margin: auto;
+}
