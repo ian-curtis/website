@@ -10,6 +10,27 @@ h1 {
   text-align: center;
 }
 
+.hero-image-music {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/me_live.JPG");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 500px;
+}
+
+.yep {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
 
 /* Main music page album art grid */
 
