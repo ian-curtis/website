@@ -140,26 +140,24 @@ main {
 
 .home-content {
   display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  /* width: 500px; */
   flex-wrap: wrap;
   flex: 0 0 33%;
   margin: auto;
   margin-top: -20px;
-  /* color: #bab9b9; */
-}
-
-.left-pic {
-  display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  width: 400px;
 }
 
-.left-pic img {
-  display: block;
+
+.home-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.home-pic img {
   width: 300px;
 }
 
@@ -174,8 +172,25 @@ main {
 }
 
 
+.error-content {
+  text-align: center;
+}
 
-
+.error-content a {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  border-style: solid;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: black;
+}
 
 
 
