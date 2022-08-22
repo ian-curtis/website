@@ -1,0 +1,7 @@
+[[plugins]]
+  package = "@netlify/plugin-a11y"
+  [plugins.inputs]
+    # Check all HTML files in this project (the default behavior)
+    checkPaths = ['/']
+    # Fail the build if a11y issues are found
+    failWithIssues = true
