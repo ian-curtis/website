@@ -69,11 +69,26 @@ abbr {
 }
 
 a {
-  color: #095575;
+  color: #004967;
 }
 
 a:hover {
   color: #097563;
+}
+
+.skip-link {
+  background: black;
+  color: #e3e3e3;
+  font-weight: 700;
+  left: 50%;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-300%);
+  transition: 0.3s;
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
 }
 
 main {
@@ -81,6 +96,9 @@ main {
   padding: 40px;
   font-size: 18px;
 }
+
+
+
 
 
 /* Hero Image for home page */
@@ -190,9 +208,12 @@ main {
   border: 2px solid black;
   border-radius: 5px;
   background-color: black;
+  color: #146080;
 }
 
-
+.error-content a:hover {
+  color: #097563;
+}
 
 
 /* Footer Styles */
@@ -219,12 +240,12 @@ footer {
 }
 
 .footer-links a {
-  color: #095575;
+  color: #420051;
   text-decoration: none;
 }
 
 .footer-links a:hover {
-  color: #0f6e96;
+  color: #005073;
 }
 
 .footer-links li {
