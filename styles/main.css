@@ -69,11 +69,11 @@ abbr {
 }
 
 a {
-  color: #097563;
+  color: #095575;
 }
 
 a:hover {
-  color: #095575;
+  color: #097563;
 }
 
 main {
@@ -219,12 +219,12 @@ footer {
 }
 
 .footer-links a {
-  color: #720055;
+  color: #095575;
   text-decoration: none;
 }
 
 .footer-links a:hover {
-  color: #095575;
+  color: #0f6e96;
 }
 
 .footer-links li {
@@ -268,6 +268,7 @@ footer {
   background: #313131;
   background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 100%, #515ECF);
     background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
