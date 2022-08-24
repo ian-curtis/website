@@ -192,6 +192,8 @@ main {
 
 .error-content {
   text-align: center;
+  padding: 50px;
+  margin-top: 30px;
 }
 
 .error-content a {
