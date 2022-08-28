@@ -29,7 +29,28 @@
   padding: 20px 80px;
 }
 
+.me-pic {
+  text-align: center;
+}
+
 .me-pic img {
   width: 70%;
   margin: auto;
+}
+
+
+@media (max-width: 860px) and (min-width: 481px) {
+.hero-about h1 {
+  font-size: 85px;
+}
+
+  .about-wrap {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .me-pic img {
+    width: 40%;
+    padding-bottom: 10px;
+  }
 }

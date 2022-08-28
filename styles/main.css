@@ -10,28 +10,32 @@ header {
   top: 0px;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 15%;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
   z-index: 99;
 }
 
-header * {
+.nav-menu * {
   display: inline;
 }
 
-header li {
+.icon {
+  display: none;
+}
+
+.nav-menu li {
   margin: 20px;
   font-size: 22px;
 }
 
-header li a {
+.nav-menu li a {
   color: #E3E3E3;
   text-decoration: none;
 }
 
-header a:hover {
+.nav-menu a:hover {
   color: #EA89DC;
 }
 
@@ -54,7 +58,50 @@ h1 a:hover {
   color: #EA89DC;
 }
 
+.icon .close {
+  display: none;
+}
 
+@media screen and (max-width: 860px) and (min-width: 481px){
+
+  .nav-menu {
+    position: fixed;
+    transform: translateX(200%);
+    /* transition: transform 0.2s; */
+    width: 50%;
+    padding: 3px;
+    z-index: 99;
+    background: black;
+    list-style: none;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .nav-item {
+    display: block;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+    right: 0;
+    margin-top: 20px;
+  }
+  
+  .showMenu li {
+    margin: auto;
+  }
+
+  header a.icon {
+    background: black;
+    display: block;
+    float: right;
+    margin: auto;
+    margin-right: 5%;
+    color: #EA89DC;
+    cursor: pointer;
+  }
+
+}
 
 /* Main Content */
 
@@ -69,7 +116,7 @@ abbr {
 }
 
 a {
-  color: #004967;
+  color: #5e0053;
 }
 
 a:hover {
@@ -141,12 +188,12 @@ main {
 
 .home-wrap {
   display: flex;
-  /* margin-top: -20px; */
   border: 2px dashed black;
 
 }
 
 .home-welcome {
+  display: block;
   font-size: 20px;
   font-weight: bold;
   margin-top: -15px;
@@ -159,12 +206,24 @@ main {
 .home-content {
   display: flex;
   flex-wrap: wrap;
-  flex: 0 0 33%;
+  flex-direction: column;
+  max-width: 50%;
   margin: auto;
   margin-top: -20px;
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 860px) and (min-width: 481px) {
+  .home-wrap {
+    flex-direction: column;
+  }
+
+  #real-life {
+    padding-bottom: 15px;
+  }
 }
 
 
@@ -173,6 +232,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding: 5px;
 }
 
 .home-pic img {
