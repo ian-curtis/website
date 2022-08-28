@@ -11,7 +11,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="../styles/main.css" />
   <link rel="stylesheet" href="../styles/cv.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a4e75b7167.js" crossorigin="anonymous"></script>
 <title>Ian Curtis - CV</title>
 </head>
 
@@ -19,20 +19,25 @@
   <header>
     <a class="skip-link" href='#main'>Skip to main content</a>
     <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ian Curtis</a></h1>
-    <nav>
-      <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../about">About</a></li>
-        <li class="active-page"><abbr title="Curriculum Vitae">CV</abbr></li>
-        <li><a href="http://www.github.com/ian-curtis">GitHub</a></li>
-        <li><a href="../music/">Music</a></li>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a class="nav-item" href="../">Home</a></li>
+        <li><a class="nav-item" href="../about">About</a></li>
+        <li class="active-page nav-item"><abbr title="Curriculum Vitae">CV</abbr></li>
+        <li><a class="nav-item" href="http://www.github.com/ian-curtis">GitHub</a></li>
+        <li><a class="nav-item" href="../music/">Music</a></li>
       </ul>
     </nav>
+<a class="icon">
+      <i class="burger fa-solid fa-bars fa-2xl"></i>
+      <i class="close fa-solid fa-xmark fa-2xl"></i>
+    </a>
+    <script src="../scripts/main.js"></script>
   </header>
 
   <main id='main'>
     <div class="hero-image-cv">
-      <div class="hero-text">
+      <div class="hero-text hero-text-cv">
         <h1>Curriculum Vitae</h1>
       </div>
     </div>
@@ -64,7 +69,7 @@
 
         <div class="cv-card-wrap">
           <div class="cv-card">
-            <div class="cv-card-front cv-card-edge">
+            <div class="cv-card-front cv-card-edge cv-card-tablet">
               <h2>Professional Experience</h2>
 
 
@@ -83,7 +88,7 @@
 
         <div class="cv-card-wrap">
           <div class="cv-card">
-            <div class="cv-card-front">
+            <div class="cv-card-front cv-card-tablet">
               <h2>Community Experience</h2>
 
 
@@ -136,7 +141,7 @@
 
         <div class="cv-card-wrap">
           <div class="cv-card">
-            <div class="cv-card-front cv-card-edge">
+            <div class="cv-card-front cv-card-edge cv-card-tablet">
               <h2>Publications and Projects</h2>
 
 
@@ -155,7 +160,7 @@
 
         <div class="cv-card-wrap">
           <div class="cv-card">
-            <div class="cv-card-front">
+            <div class="cv-card-front cv-card-tablet">
               <h2>Languages</h2>
 
 

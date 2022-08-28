@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a4e75b7167.js" crossorigin="anonymous"></script>
 <title>Ian Curtis - Accessibility Note</title>
 </head>
 
@@ -19,15 +19,20 @@
     <a class="skip-link" href='#main'>Skip to main content</a>
     <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ian Curtis</a></h1>
 
-    <nav>
-      <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../about/">About</a></li>
-        <li><a href='../cv'><abbr title="Curriculum Vitae">CV</abbr></a></li>
-        <li><a href="http://www.github.com/ian-curtis">GitHub</a></li>
-        <li><a href="../music/">Music</a></li>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a class="nav-item" href="../">Home</a></li>
+        <li><a class="nav-item" href="../about/">About</a></li>
+        <li><a class="nav-item" href='../cv'><abbr title="Curriculum Vitae">CV</abbr></a></li>
+        <li><a class="nav-item" href="http://www.github.com/ian-curtis">GitHub</a></li>
+        <li><a class="nav-item" href="../music/">Music</a></li>
       </ul>
     </nav>
+    <a class="icon">
+      <i class="burger fa-solid fa-bars fa-2xl"></i>
+      <i class="close fa-solid fa-xmark fa-2xl"></i>
+    </a>
+    <script src="../scripts/main.js"></script>
   </header>
 
 
@@ -59,6 +64,9 @@
         <li>
           Links do not open in a new tab
         </li>
+        <li>
+          A skip to main content button is on every page
+        </li>
       </ul>
      </p>
      <p>
@@ -69,9 +77,6 @@
         </li>
         <li>
           Make all areas of the site (notably the navigation bar and panel grids on the <abbr title="curriculum vitae">CV</abbr> page) look good on other browsers
-        </li>
-        <li>
-          Check color contrasts on all pages
         </li>
       </ul>
      </p>
