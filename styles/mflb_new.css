@@ -9,6 +9,12 @@
 }
 
 /* Override header and page settings from main */
+
+header a.icon {
+  color: #e6e6e6;
+  background: rgb(84, 84, 84);
+}
+
 a {
   color: #820c0c;
 }
@@ -18,20 +24,15 @@ a:hover {
 }
 
 header {
-  /* background-color: #707070; */
   background-color: rgb(84, 84, 84);
 }
 
-header h1{
-  color: #e6e6e6;
-}
-
-header li a {
+.nav-menu li a {
   color: #e6e6e6;
   text-decoration: none;
 }
 
-header a:hover{
+.nav-menu a:hover{
   color: black;
 }
 
@@ -57,4 +58,10 @@ header a:hover{
 
 .chorus {
   color: #820c0c;
+}
+
+@media screen and (max-width: 860px)  {
+  .nav-menu a:hover{
+    color: rgb(149, 149, 149);
+  }
 }

@@ -1,4 +1,10 @@
 /* Override header and page settings from main */
+
+header a.icon {
+  color: black;
+  background: #813a17;
+}
+
 a {
   color: #722b18;
 }
@@ -11,12 +17,12 @@ header {
   background-color: #813a17;
 }
 
-header li a {
+.nav-menu li a {
   color: black;
   text-decoration: none;
 }
 
-header a:hover{
+.nav-menu a:hover{
   color: #E3E3E3;
 }
 
@@ -33,5 +39,11 @@ header a:hover{
 .back-button:hover {
   background-color: #9e490c;
   color: #edebeb;
+}
+
+@media screen and (max-width: 860px) {
+  .nav-menu li a {
+    color: rgb(149, 149, 149);
+  }
 }
 

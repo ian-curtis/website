@@ -7,3 +7,5 @@ Here are some sources I drew from when designing my website. Probably not necess
 * [CV Flip Cards (Source 1)](https://itnext.io/flippable-css-card-how-to-create-a-css-card-that-flips-when-you-hover-af1ef763f3d2), [Source 2](https://www.w3schools.com/howto/howto_css_flip_card.asp)
 * [Responsive image grid](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp)
 * [Color picker](https://htmlcolorcodes.com/color-picker/)
+* Footer icons are from [Font Awesome](https://www.fontawesome.com) EXCEPT the Apple Music logo which is from [Apple Music Marketing](https://tools.applemediaservices.com/apple-music)
+* [Instagram Logo Gradient Color](https://codepen.io/thomasrye/pen/VaRoYv) (slightly modified from)

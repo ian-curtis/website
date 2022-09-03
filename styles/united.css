@@ -1,4 +1,10 @@
 /* Override header and page settings from main */
+
+header a.icon {
+  color: #E3E3E3;
+  background: #333a4f;
+}
+
 a {
   color: #26273d;
 }
@@ -11,12 +17,12 @@ header {
   background-color: #333a4f;
 }
 
-header li a {
+.nav-menu li a {
   color: #E3E3E3;
   text-decoration: none;
 }
 
-header a:hover{
+.nav-menu a:hover{
   color: #af8d6c;
 }
 
