@@ -2,6 +2,14 @@ main {
   padding-top: 100px;
 }
 
+header h1 a {
+  color: #e3e3e3;
+}
+
+header h1 a:hover {
+  color: #e3e3e3;
+}
+
 h1 {
   text-align: center;
 }
@@ -30,38 +38,30 @@ h1 {
 
 /* Main music page album art grid */
 
-.art-grid-wrap {
+.album-art-wrap {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: auto;
 }
 
-.art-row {
-  display: flex;
-  width: 910px;
-  justify-content: space-between;
-  align-items: center;
+.album-art-wrap a {
+  display: inline-block;
+  padding: 3px;
 }
 
-.art-column {
-  flex: 33.33%;
-  padding: 5px;
-  padding-right: 20px;
-  float: left;
+.album-art-wrap img {
+  width: 250px;
 }
 
-.art-row img {
-  width: 300px;
-  height: 300px;
-}
 
 .music-container {
   display: flex;
 }
 
 .music-sidebar {
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
@@ -80,11 +80,11 @@ h1 {
 }
 
 .about-music {
-  padding-right: 20px;
+  /* padding-right: 20px; */
   margin-right: 35px;
-  max-width: 1000px;
-
+  width: 90%;
 }
+
 
 
 
@@ -112,7 +112,6 @@ h1 {
 
 .back-to-album img {
   height: 300px;
-  width: 300px;
 }
 
 .lyrics {
@@ -137,4 +136,29 @@ h1 {
 .spotify-play {
   padding-top: 15px;
   padding-bottom: 3px;
+}
+
+@media screen and (max-width: 935px) {
+  .album-art-wrap {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 860px) and (min-width: 481px) {
+
+  .track-container {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 481px) {
+  .music-container {
+    flex-direction: column;
+  }
+
+  .music-sidebar {
+    width: 60%;
+  }
+
 }

@@ -1,10 +1,16 @@
 /* Override header and page settings from main */
+
+header a.icon {
+  color: #d4dbe1;
+  background: #4d807a;
+}
+
 a {
   color: #436825;
 }
 
 a:hover {
-  color: #bc7f3d;
+  color: #965612;
 }
 
 header {
@@ -15,12 +21,12 @@ header h1{
   color: #d4dbe1;
 }
 
-header li a {
+.nav-menu li a {
   color: #d4dbe1;
   text-decoration: none;
 }
 
-header a:hover{
+.nav-menu a:hover{
   color: black;
 }
 
@@ -61,4 +67,10 @@ header a:hover{
 
 .chorus {
   color: #4d807a;
+}
+
+@media screen and (max-width: 860px) {
+  .nav-menu a:hover{
+    color: rgb(149, 149, 149);
+  }
 }

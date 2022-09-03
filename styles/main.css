@@ -62,46 +62,7 @@ h1 a:hover {
   display: none;
 }
 
-@media screen and (max-width: 860px) and (min-width: 481px){
 
-  .nav-menu {
-    position: fixed;
-    transform: translateX(200%);
-    /* transition: transform 0.2s; */
-    width: 50%;
-    padding: 3px;
-    z-index: 99;
-    background: black;
-    list-style: none;
-    padding-top: 5px;
-    text-align: center;
-  }
-
-  .nav-item {
-    display: block;
-  }
-
-  .showMenu {
-    transform: translateY(0);
-    right: 0;
-    margin-top: 20px;
-  }
-  
-  .showMenu li {
-    margin: auto;
-  }
-
-  header a.icon {
-    background: black;
-    display: block;
-    float: right;
-    margin: auto;
-    margin-right: 5%;
-    color: #EA89DC;
-    cursor: pointer;
-  }
-
-}
 
 /* Main Content */
 
@@ -216,15 +177,7 @@ main {
   padding: 10px;
 }
 
-@media screen and (max-width: 860px) and (min-width: 481px) {
-  .home-wrap {
-    flex-direction: column;
-  }
 
-  #real-life {
-    padding-bottom: 15px;
-  }
-}
 
 
 .home-pic {
@@ -403,4 +356,54 @@ footer {
 .fa-youtube:hover {
   color: #FF0000;
   opacity: .7;
+}
+
+@media screen and (max-width: 860px){
+
+  .nav-menu {
+    position: fixed;
+    transform: translateX(200%);
+    transition: transform 0.5s;
+    width: 50%;
+    padding: 7px 3px;
+    z-index: 99;
+    background: black;
+    list-style: none;
+    text-align: center;
+  }
+
+  .nav-item {
+    display: block;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+    right: 0;
+    margin-top: 20px;
+  }
+  
+  .showMenu li {
+    margin: auto;
+  }
+
+  header a.icon {
+    background: black;
+    display: block;
+    float: right;
+    margin: auto;
+    margin-right: 5%;
+    color: #EA89DC;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width: 860px) and (min-width: 481px) {
+  .home-wrap {
+    flex-direction: column;
+  }
+
+  #real-life {
+    padding-bottom: 15px;
+  }
 }
