@@ -2,6 +2,51 @@
   font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
 }
 
+.nav-menu {
+  position: fixed;
+  transform: translateX(200%);
+  transition: transform 0.5s;
+  width: 50%;
+  padding: 7px 3px;
+  z-index: 99;
+  background: black;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  display: block;
+}
+
+.showMenu {
+  transform: translateY(0);
+  right: 0;
+  margin-top: 20px;
+}
+
+.showMenu li {
+  margin: auto;
+}
+
+header a.icon {
+  background: black;
+  display: block;
+  float: right;
+  margin: auto;
+  margin-right: 5%;
+  color: #EA89DC;
+  cursor: pointer;
+}
+
+.home-wrap {
+  flex-direction: column;
+}
+
+#real-life {
+  padding-bottom: 15px;
+}
+
+
 /* header */
 
 header {
@@ -40,10 +85,9 @@ header {
 }
 
 header h1 a {
-  margin-left: 40px;
-  /* color: #E3E3E3; */
+  margin-left: 20px;
   color: #099392;
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
 
 }
@@ -91,7 +135,7 @@ a:hover {
   left: 50%;
   padding: 4px;
   position: absolute;
-  transform: translateY(-300%);
+  transform: translateY(-400%);
   transition: 0.3s;
 }
 
@@ -101,7 +145,7 @@ a:hover {
 
 main {
   background-color: #b0b0b0;
-  padding: 40px;
+  padding: 20px;
   font-size: 18px;
 }
 
@@ -137,20 +181,19 @@ main {
 }
 
 .hero-text h1 {
-  font-size: 100px;
+  font-size: 70px;
   color: #E3E3E3;
 }
 
 .tagline {
   font-size: 35px;
   color: #e3e3e3;
-  margin-top: -60px;
+  margin-top: -30px;
 }
 
 .home-wrap {
   display: flex;
   border: 2px dashed black;
-
 }
 
 .home-welcome {
@@ -168,7 +211,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 90%;
   margin: auto;
   margin-top: -20px;
   text-align: center;
@@ -184,12 +227,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 5px;
+  max-width: 100%;
 }
 
 .home-pic img {
-  width: 300px;
+  width: 90%;
 }
 
 
@@ -235,6 +277,7 @@ main {
 
 footer {
   background-color: #8a8a8a;
+  pad: 20px;
 }
 
 .footer-intro {
@@ -242,16 +285,31 @@ footer {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 500px;
+  width: 90%;
   margin: auto;
   padding-top: 7px;
   text-align: center;
 }
 
-.footer-links {
+.footer-links, .footer-links li {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex: 1;
+  top: 0;
+  width: 100%;
+}
+
+.footer-links ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-links li {
+  list-style: none;
+  padding: 0 10px;
 }
 
 .footer-links a {
@@ -263,11 +321,6 @@ footer {
   color: #005073;
 }
 
-.footer-links li {
-  display: inline;
-  padding-right: 25px;
-}
-
 
 
 /* Social Media Icons */
@@ -275,24 +328,22 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  padding: 10px 10px;
-  
+  font-size: 30px;  
 }
 
 .fa {
   width: 30px;
+  height: 30px;
   text-decoration: none;
-  margin-right: 20px;
-  margin-left: 20px;
   background-color: #313131 !important;
   text-align: center;
-  padding: 5px;
   border-radius: 10px;
+  padding: 5px;
 }
 
 .fa-linkedin {
   color: #0077B5;
+  margin-right: 10px;
 }
 
 .fa-linkedin:hover {
@@ -315,9 +366,7 @@ footer {
   justify-content: center;
   background-color: #313131;
   border-radius: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 41px;
+  margin-right: 10px;
 }
 
 .instagram-wrap:hover {
@@ -327,6 +376,7 @@ footer {
 
 .fa-spotify {
   color: #1DB954;
+  margin-right: 10px;
 }
 
 .fa-spotify:hover {
@@ -334,14 +384,13 @@ footer {
   color: #1DB954;
 }
 
+.apple-music {
+  margin-right: 10px;
+}
+
 .apple-music img{
   display: block;
-  margin-left: 1px;
-  margin-right: 2px;
-  padding: 1px;
-  width: 90%;
-  height: 29px;
-  
+  max-width: 100%;
 }
 
 .apple-music:hover {
@@ -351,59 +400,10 @@ footer {
 
 .fa-youtube {
   color: #FF0000;
+  padding-right: 6px;
 }
 
 .fa-youtube:hover {
   color: #FF0000;
   opacity: .7;
-}
-
-@media screen and (max-width: 860px){
-
-  .nav-menu {
-    position: fixed;
-    transform: translateX(200%);
-    transition: transform 0.5s;
-    width: 50%;
-    padding: 7px 3px;
-    z-index: 99;
-    background: black;
-    list-style: none;
-    text-align: center;
-  }
-
-  .nav-item {
-    display: block;
-  }
-
-  .showMenu {
-    transform: translateY(0);
-    right: 0;
-    margin-top: 20px;
-  }
-  
-  .showMenu li {
-    margin: auto;
-  }
-
-  header a.icon {
-    background: black;
-    display: block;
-    float: right;
-    margin: auto;
-    margin-right: 5%;
-    color: #EA89DC;
-    cursor: pointer;
-  }
-
-}
-
-@media screen and (max-width: 860px) and (min-width: 481px) {
-  .home-wrap {
-    flex-direction: column;
-  }
-
-  #real-life {
-    padding-bottom: 15px;
-  }
 }
