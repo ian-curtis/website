@@ -11,7 +11,7 @@
   height: 50%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: 50% 30%;
+  background-position: 40% 30%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -21,12 +21,14 @@
 .about-wrap {
   display: flex;
   align-items: center;
+  flex-direction: column-reverse;
   justify-content: center;
   border: 2px dashed black;
+  text-align: center;
 }
 
 .about-me-content {
-  padding: 20px 80px;
+  padding: 0 30px;
 }
 
 .me-pic {
@@ -36,21 +38,5 @@
 .me-pic img {
   width: 70%;
   margin: auto;
-}
-
-
-@media (max-width: 860px) and (min-width: 481px) {
-.hero-about h1 {
-  font-size: 85px;
-}
-
-  .about-wrap {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  .me-pic img {
-    width: 40%;
-    padding-bottom: 10px;
-  }
+  padding: 10px;
 }

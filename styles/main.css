@@ -3,6 +3,8 @@
 }
 
 .nav-menu {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   transform: translateX(200%);
   transition: transform 0.5s;
@@ -14,18 +16,10 @@
   text-align: center;
 }
 
-.nav-item {
-  display: block;
-}
-
 .showMenu {
   transform: translateY(0);
   right: 0;
   margin-top: 20px;
-}
-
-.showMenu li {
-  margin: auto;
 }
 
 header a.icon {
@@ -70,9 +64,15 @@ header {
   display: none;
 }
 
+.nav-menu {
+  width: 50%;
+  height: 100%;
+  margin-top: 30px;
+}
+
 .nav-menu li {
-  margin: 20px;
   font-size: 22px;
+  margin: 20px;
 }
 
 .nav-menu li a {
@@ -164,7 +164,7 @@ main {
   height: 50%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: 60% 30%;
+  background-position: 45% 30%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -265,7 +265,7 @@ main {
   border: 2px solid black;
   border-radius: 5px;
   background-color: black;
-  color: #146080;
+  color: #187aa4;
 }
 
 .error-content a:hover {

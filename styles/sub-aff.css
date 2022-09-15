@@ -30,6 +30,11 @@ header h1{
   color: #cc7a35;
 }
 
+.about-track li {
+  text-align: left;
+  padding-bottom: 3px;
+}
+
 
 
 /* Add custom button styles */
@@ -46,24 +51,6 @@ header h1{
   background-color: #d68438;
 }
 
-/* Track Listing styles */
-.track-list {
-  text-align: center;
-}
-
-.track-list ol {
-  display: inline-block;
-  text-align: left;
-}
-
-.track-list li {
-  padding-bottom: 5px;
-}
-
-/* Center all lyrics */
-.lyrics {
-  text-align: center;
-}
 
 /* Change color of chorus */
 

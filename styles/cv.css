@@ -17,6 +17,7 @@
 }
 
 .hero-text {
+  width: 90%;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -27,17 +28,7 @@
 }
 
 .cv-content {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.cv-content-trad {
-  padding: 40px;
-  width: 90%;
-}
-
-.cv-content-trad li {
-  padding-bottom: 3px;
+  padding: 0 10px;
 }
 
 .cv-intro {
@@ -51,7 +42,19 @@
   border: 3px dotted black;
 }
 
-.p-not-first {
-  margin-top: -1em;
+.cv-box-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-box {
+  padding: 5px;
+  text-align: center;
+  border: 3px solid black;
+  background-color: rgba(41, 15, 140, .5);
+}
+
+.cv-box:not(:last-child) {
+  margin-bottom: 10px;
 }
 

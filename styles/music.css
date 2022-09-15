@@ -36,6 +36,12 @@ h1 {
   font-weight: bold;
 }
 
+.about-music {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Main music page album art grid */
 
 .album-art-wrap {
@@ -58,10 +64,10 @@ h1 {
 
 .music-container {
   display: flex;
+  flex-direction: column;
 }
 
 .music-sidebar {
-  width: 30%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
@@ -79,18 +85,15 @@ h1 {
   text-align: center;
 }
 
-.about-music {
-  /* padding-right: 20px; */
-  margin-right: 35px;
-  width: 90%;
-}
-
 
 
 
 /* individual track pages */
 .track-container {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
 }
 
 .back-to-album {
@@ -101,21 +104,25 @@ h1 {
   text-align: center;
 }
 
-.about-track h1 {
-  text-align: center;
-}
-
-.about-track {
-  padding-right: 20px;
-  margin-right: 35px;
-}
-
 .back-to-album img {
-  height: 300px;
+  height: 250px;
+}
+
+/* Track Listing styles */
+
+.track-list ol {
+  display: inline-block;
+  text-align: left;
+}
+
+.track-list li {
+  padding-bottom: 5px;
 }
 
 .lyrics {
+  padding: 0 15px;
   padding-top: 15px;
+  text-align: center;
 }
 
 .back-button {
@@ -136,29 +143,4 @@ h1 {
 .spotify-play {
   padding-top: 15px;
   padding-bottom: 3px;
-}
-
-@media screen and (max-width: 935px) {
-  .album-art-wrap {
-    flex-direction: row;
-  }
-}
-
-@media screen and (max-width: 860px) and (min-width: 481px) {
-
-  .track-container {
-    flex-direction: column;
-  }
-}
-
-
-@media screen and (max-width: 1000px) and (min-width: 481px) {
-  .music-container {
-    flex-direction: column;
-  }
-
-  .music-sidebar {
-    width: 60%;
-  }
-
 }

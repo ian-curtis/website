@@ -44,25 +44,6 @@ header h1{
   background-color: #43cfad;
 }
 
-/* Track Listing styles */
-.track-list {
-  text-align: center;
-}
-
-.track-list ol {
-  display: inline-block;
-  text-align: left;
-}
-
-.track-list li {
-  padding-bottom: 5px;
-}
-
-/* Center all lyrics */
-.lyrics {
-  text-align: center;
-}
-
 /* Change color of chorus */
 
 .chorus {
