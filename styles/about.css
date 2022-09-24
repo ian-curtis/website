@@ -36,7 +36,36 @@
 }
 
 .me-pic img {
-  width: 70%;
+  width: 60%;
   margin: auto;
   padding: 10px;
+}
+
+@media screen and (min-width:771px) {
+  .me-pic img {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .about-wrap {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .me-pic img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-image-about {
+    padding-top: 600px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .hero-image-about {
+    padding-top: 800px;
+  }
 }

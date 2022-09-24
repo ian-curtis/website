@@ -1,4 +1,4 @@
-const menu = document.querySelector(".nav-menu");
+const menu = document.querySelector(".nav-menu-mobile");
 const menuItems = document.querySelectorAll(".nav-item");
 const hamburger= document.querySelector(".icon");
 const closeIcon= document.querySelector(".close");
@@ -23,4 +23,23 @@ menuItems.forEach(
   function(menuItem) { 
     menuItem.addEventListener("click", toggleMenu);
   }
-)
+);
+
+$(document).ready(function () {
+  navBarMobile();//run when page first loads
+});
+
+$(window).resize(function () {
+  navBarMobile();//run on every window resize
+});
+
+function navBarMobile (){
+  var screenWidthBig = window.matchMedia("(min-width: 771px)");
+  var screenWidthSmall = window.matchMedia("(max-width: 770px)");
+  if (screenWidthBig.matches) {
+    $("ul").removeClass("nav-menu-mobile");
+  }
+  else if (screenWidthSmall.matches) {
+    $(".nav-menu").addClass("nav-menu-mobile")
+  }
+}

@@ -2,18 +2,21 @@
   font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
 }
 
-.nav-menu {
-  display: flex;
+.nav-menu-mobile {
+  display: inline-flex;
   flex-direction: column;
   position: fixed;
   transform: translateX(200%);
-  transition: transform 0.5s;
+  transition: transform 0s;
   width: 50%;
   padding: 7px 3px;
   z-index: 99;
   background: black;
   list-style: none;
   text-align: center;
+  width: 50%;
+  height: 100%;
+  margin-top: 30px;
 }
 
 .showMenu {
@@ -62,12 +65,6 @@ header {
 
 .icon {
   display: none;
-}
-
-.nav-menu {
-  width: 50%;
-  height: 100%;
-  margin-top: 30px;
 }
 
 .nav-menu li {
@@ -178,6 +175,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #e3e3e3;
+  width: 70%;
 }
 
 .hero-text h1 {
@@ -227,7 +225,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  
 }
 
 .home-pic img {
@@ -236,7 +234,7 @@ main {
 
 
 
-
+/* 404 page styles */
 
 .access-content {
   padding-left: 40px;
@@ -277,7 +275,7 @@ main {
 
 footer {
   background-color: #8a8a8a;
-  pad: 20px;
+  padding: 10px;
 }
 
 .footer-intro {
@@ -406,4 +404,57 @@ footer {
 .fa-youtube:hover {
   color: #FF0000;
   opacity: .7;
+}
+
+@media screen and (min-width:771px) {
+  
+  header a.icon {
+    display: none;
+  }
+
+  .home-pic img {
+    width: 50%;
+  }
+  
+}
+
+@media screen and (min-width: 850px) {
+  .home-wrap {
+    flex-direction: row;
+  }
+
+  .home-pic img {
+    width: 200px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-pic img {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-image-home {
+    padding-top: 600px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .home-pic img {
+    width: 500px;
+  }
+
+  .skip-link {
+    transform: translateY(-500%);
+  }
+
+  .hero-image-home {
+    padding-top: 800px;
+  }
+
+  header {
+    height: 10%;
+  }
 }

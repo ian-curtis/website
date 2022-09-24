@@ -30,6 +30,11 @@ h1 {
   padding-top: 500px;
 }
 
+.music-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .yep {
   text-align: center;
   font-size: 30px;
@@ -48,8 +53,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+  flex-basis: content;
   justify-content: center;
   align-items: center;
+  
 }
 
 .album-art-wrap a {
@@ -61,13 +68,10 @@ h1 {
   width: 250px;
 }
 
-
-.music-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .music-sidebar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
@@ -77,8 +81,10 @@ h1 {
 
 .music-sidebar-box {
   border: 2px solid black;
+  margin: auto;
   border-radius: 5px;
   padding: 15px;
+  width: 50%;
 }
 
 .about-music h1 {
@@ -89,6 +95,13 @@ h1 {
 
 
 /* individual track pages */
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
 .track-container {
   display: flex;
   flex-direction: column;
@@ -110,9 +123,15 @@ h1 {
 
 /* Track Listing styles */
 
+.track-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .track-list ol {
   display: inline-block;
-  text-align: left;
 }
 
 .track-list li {
@@ -143,4 +162,67 @@ h1 {
 .spotify-play {
   padding-top: 15px;
   padding-bottom: 3px;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .about-music {
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .music-container {
+    flex-direction: row;
+  }
+
+  .music-sidebar-box {
+    width: 80%;
+  }
+
+  .track-container {
+    flex-direction: row;
+  }
+
+  .about-track {
+    text-align: left;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-image-music {
+    padding-top: 600px;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .album-art-wrap {
+    padding-top: 20px;
+  }
+
+  .hero-image-music {
+    padding-top: 800px;
+  }
+
+  .track-container {
+    margin-top: 50px;
+  }
+
+  .about-track {
+    flex-basis: 75%;
+  }
+
+  .back-to-album img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .back-button {
+    width: 250px;
+    height: 50px;
+  }
 }
