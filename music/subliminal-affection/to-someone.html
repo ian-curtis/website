@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="author" content="Ian Curtis">
     <meta name="description" content="Track information for To Someone from the Subliminal Affection album.">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="../../styles/music.css">
     <link rel="stylesheet" href="../../styles/sub-aff.css">
       <script src="https://kit.fontawesome.com/a4e75b7167.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <title>Ian Curtis - To Someone</title>
   </head>
   <body>
@@ -19,7 +21,7 @@
     <a class="skip-link" href='#main'>Skip to main content</a>
       <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ian Curtis</a></h1>
     <nav class="navbar">
-      <ul class='nav-menu'>
+      <ul class='nav-menu nav-menu-mobile'>
         <li><a class='nav-item' href="../../">Home</a></li>
         <li><a class='nav-item' href="../../about">About</a></li>
         <li><a class="nav-item" href="../../cv"><abbr title="Curriculum Vitae">CV</abbr></a></li>
@@ -38,6 +40,8 @@
       <div class="track-container">
         <div class="about-track">
           <h1>About the Track</h1>
+      <h2><a href="#lyrics">Jump to lyrics</a></h2>
+
           <p>
             The chorus came to me quite suddenly and I quickly formed the rest of the lyrics. I nearly scratched this one because it seems too cheesy and too idealistic. It also isn't even about anyone (hence the generic title). I ended up keeping it because of the <q>sublminal affection</q> theme. It is possible to have affection towards people you haven't even met. Every time you hold the door for someone, recycle, or vote, you are showing your sublminal affection. You are not alone in this world and every action has its consequences. Clearly, this song isn't as profound as the ultimate goal behind it but I hope we can keep caring for others.
           </p>
@@ -59,7 +63,7 @@
             </div>
         </div>
       </div>
-          <div class="lyrics">
+          <div id='lyrics' class="lyrics">
             <h1>Lyrics</h1>
             <p>
               I went downtown to see what I could see<br>
@@ -130,7 +134,7 @@
           <a href="../../accessibility/">Accessibility Statement</a>
         </li>
         <li>
-          Sitemap
+          <a href="/sitemap.xml">Sitemap</a>
         </li>
       </ul>
       </p>

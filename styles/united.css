@@ -14,7 +14,7 @@ a:hover {
 }
 
 header {
-  background-color: #333a4f;
+  background: #333a4f;
 }
 
 .nav-menu li a {
@@ -24,6 +24,10 @@ header {
 
 .nav-menu a:hover{
   color: #af8d6c;
+}
+
+.about-track ol {
+  text-align: left;
 }
 
 /* Add custom button styles */

@@ -1,5 +1,5 @@
 main {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 header h1 a {
@@ -30,10 +30,21 @@ h1 {
   padding-top: 500px;
 }
 
+.music-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .yep {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
+}
+
+.about-music {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Main music page album art grid */
@@ -42,8 +53,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+  flex-basis: content;
   justify-content: center;
   align-items: center;
+  
 }
 
 .album-art-wrap a {
@@ -55,13 +68,10 @@ h1 {
   width: 250px;
 }
 
-
-.music-container {
-  display: flex;
-}
-
 .music-sidebar {
-  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
@@ -71,26 +81,32 @@ h1 {
 
 .music-sidebar-box {
   border: 2px solid black;
+  margin: auto;
   border-radius: 5px;
   padding: 15px;
+  width: 50%;
 }
 
 .about-music h1 {
   text-align: center;
 }
 
-.about-music {
-  /* padding-right: 20px; */
-  margin-right: 35px;
-  width: 90%;
-}
-
 
 
 
 /* individual track pages */
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
 .track-container {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
 }
 
 .back-to-album {
@@ -101,21 +117,31 @@ h1 {
   text-align: center;
 }
 
-.about-track h1 {
-  text-align: center;
-}
-
-.about-track {
-  padding-right: 20px;
-  margin-right: 35px;
-}
-
 .back-to-album img {
-  height: 300px;
+  height: 250px;
+}
+
+/* Track Listing styles */
+
+.track-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.track-list ol {
+  display: inline-block;
+}
+
+.track-list li {
+  padding-bottom: 5px;
 }
 
 .lyrics {
+  padding: 0 15px;
   padding-top: 15px;
+  text-align: center;
 }
 
 .back-button {
@@ -138,27 +164,65 @@ h1 {
   padding-bottom: 3px;
 }
 
-@media screen and (max-width: 935px) {
-  .album-art-wrap {
+@media screen and (min-width: 1024px) {
+
+  .about-music {
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .music-container {
     flex-direction: row;
   }
-}
 
-@media screen and (max-width: 860px) and (min-width: 481px) {
+  .music-sidebar-box {
+    width: 80%;
+  }
 
   .track-container {
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .about-track {
+    text-align: left;
+    padding: 0 20px;
   }
 }
 
-
-@media screen and (max-width: 1000px) and (min-width: 481px) {
-  .music-container {
-    flex-direction: column;
+@media screen and (min-width: 1200px) {
+  .hero-image-music {
+    padding-top: 600px;
   }
 
-  .music-sidebar {
-    width: 60%;
+  main {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .album-art-wrap {
+    padding-top: 20px;
   }
 
+  .hero-image-music {
+    padding-top: 800px;
+  }
+
+  .track-container {
+    margin-top: 50px;
+  }
+
+  .about-track {
+    flex-basis: 75%;
+  }
+
+  .back-to-album img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .back-button {
+    width: 250px;
+    height: 50px;
+  }
 }

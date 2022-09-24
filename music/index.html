@@ -5,13 +5,15 @@
   <meta charset="utf-8">
   <meta name="author" content="Ian Curtis">
   <meta name="description" content="Central page for music created by Ian Curtis. New song The '80s out soon!">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/music.css">
   <script src="https://kit.fontawesome.com/a4e75b7167.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <title>Ian Curtis - Music</title>
 </head>
 
@@ -21,7 +23,7 @@
       <a class="skip-link" href='#main'>Skip to main content</a>
       <h1><a style="color: #099392;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ian Curtis</a></h1>
       <nav class="navbar">
-        <ul class="nav-menu">
+        <ul class='nav-menu nav-menu-mobile'>
           <li><a class="nav-item" href="../">Home</a></li>
           <li><a class="nav-item" href="../about">About</a></li>
           <li><a class="nav-item" href="../cv"><abbr title="Curriculum Vitae">CV</abbr></a></li>
@@ -47,8 +49,11 @@
     </div>
 
     <div class="music-container">
+
       <div class="about-music">
+
         <div class="music-text">
+
           <p class="yep">
             Yep, I make music, too!
           </p>
@@ -78,7 +83,7 @@
           </p>
           <p>
             To learn more about my music, click on any of the album art below or check out my artist pages on various
-            streaming platforms on the side of the page.
+            streaming platforms (also found on this page or on individual pages).
           </p>
           <p>
             Note: You may find tracks other than these on my profile on certain streaming platforms. If the track is not
@@ -95,70 +100,37 @@
             <img alt='March Forward, Look Back (new version) album art' src="/images/album-art/MFLBnew.png" />
           </a>
 
-          <a href="subliminal-affection/">
-            <img alt='Subliminal Affection album art' src="/images/album-art/subliminal_affection.png" />
-          </a>
-
           <a href="singles/united.html">
             <img alt='United album art' src="/images/album-art/united.png" />
           </a>
 
+          <a href="subliminal-affection/">
+            <img alt='Subliminal Affection album art' src="/images/album-art/subliminal_affection.png" />
+          </a>
 
-          <a href="singles/when-all-seems-lost.html">
-            <img alt='When All Seems Lost album art' src="/images/album-art/when_all_seems_lost.png" />
+          <a href="infinity-squared">
+            <img alt='Infinity Squared album art' src="/images/album-art/infsq.png" />
           </a>
 
           <a href="singles/bleeding-out.html">
             <img alt='Bleeding Out (Imagine Dragons cover) album art' src="/images/album-art/bleeding_out.png" />
           </a>
 
-          <a href="infinity-squared">
-            <img alt='Infinity Squared album art' src="/images/album-art/infsq.png" />
+          <a href="singles/when-all-seems-lost.html">
+            <img alt='When All Seems Lost album art' src="/images/album-art/when_all_seems_lost.png" />
           </a>
         </div>
       </div>
 
-      <!-- <div class="art-grid-wrap">
-          <div class="art-grid">
-            <div class="art-column">
-              <div class="art-row">
-                <a href="subliminal-affection/">
-                  <img alt='Subliminal Affection album art' src="/images/album-art/subliminal_affection.png" />
-                </a>
-                <a href="singles/united.html">
-                  <img alt='United album art' src="/images/album-art/united.png" />
-                </a>
-                <a href="singles/mflb-new.html">
-                  <img alt='March Forward, Look Back (new version) album art' src="/images/album-art/MFLBnew.png" />
-                </a>
-              </div>
-
-              <div class="art-row">
-                <a href="singles/when-all-seems-lost.html">
-                  <img alt='When All Seems Lost album art' src="/images/album-art/when_all_seems_lost.png" />
-                </a>
-                <a href="singles/bleeding-out.html">
-                  <img alt='Bleeding Out (Imagine Dragons cover) album art' src="/images/album-art/bleeding_out.png" />
-                </a>
-                <a href="infinity-squared">
-                  <img alt='Infinity Squared album art' src="/images/album-art/infsq.png" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
       <div class="music-sidebar">
-        <p class="music-sidebar-box">
+        <div class="music-sidebar-box">
+        <p>
           Want to have a listen to my music? Check out the platforms below!
         </p>
+        </div>
 
         <div class="spotify-play">
-          <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/artist/6xSxIN1tpzv9jJEOVtw6ir?utm_source=generator" width="100%"
-            height="80" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6xSxIN1tpzv9jJEOVtw6ir?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
 
         <div class="apple-play">
@@ -207,7 +179,7 @@
           <a href="../accessibility/">Accessibility Statement</a>
         </li>
         <li>
-          Sitemap
+          <a href="/sitemap.xml">Sitemap</a>
         </li>
       </ul>
       </p>

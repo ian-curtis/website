@@ -1,11 +1,10 @@
 .mflbupdate {
   display: block;
-  width: 500px;
+  width: 90%;
   text-align: center;
   margin: auto;
   border-style: dashed;
   border: 3px dashed black;
-  border-color: #820c0c;
 }
 
 /* Override header and page settings from main */

@@ -30,6 +30,11 @@ header h1{
   color: #cc7a35;
 }
 
+.about-track li {
+  text-align: left;
+  padding-bottom: 3px;
+}
+
 
 
 /* Add custom button styles */
@@ -46,24 +51,6 @@ header h1{
   background-color: #d68438;
 }
 
-/* Track Listing styles */
-.track-list {
-  text-align: center;
-}
-
-.track-list ol {
-  display: inline-block;
-  text-align: left;
-}
-
-.track-list li {
-  padding-bottom: 5px;
-}
-
-/* Center all lyrics */
-.lyrics {
-  text-align: center;
-}
 
 /* Change color of chorus */
 
@@ -91,15 +78,14 @@ h3 {
 
 .sadie-row {
   display: flex;
+  flex-direction: column;
   padding: 10px;
   margin-top: 30px;
   background-color: black;
 }
 
-/* Create four equal columns that sits next to each other */
 .sadie-column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 50%;
   padding: 0 4px;
 }
 
@@ -109,3 +95,18 @@ h3 {
   vertical-align: middle;
   width: 100%;
 }
+
+/* Create four equal columns that sits next to each other */
+
+@media screen and (min-width:481px) {
+  .sadie-row {
+    flex-direction: row;
+  }
+
+  .sadie-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+}
+
