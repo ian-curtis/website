@@ -2,6 +2,9 @@
   font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
 }
 
+/* Styles for mobile navigation menu */
+/* Everything here turns original menu into mobile */
+/* Removing this style will revert back to original menu (for desktops) */
 .nav-menu-mobile {
   display: inline-flex;
   flex-direction: column;
@@ -19,12 +22,14 @@
   margin-top: 30px;
 }
 
+/* Move the menu from way off the page to viewable */
 .showMenu {
   transform: translateY(0);
   right: 0;
   margin-top: 20px;
 }
 
+/* Style the hamburger and close icon */
 header a.icon {
   background: black;
   display: block;
@@ -35,17 +40,9 @@ header a.icon {
   cursor: pointer;
 }
 
-.home-wrap {
-  flex-direction: column;
-}
+/* main header */
 
-#real-life {
-  padding-bottom: 15px;
-}
-
-
-/* header */
-
+/* header background and position */
 header {
   background-color: black;
   position: fixed;
@@ -63,6 +60,7 @@ header {
   display: inline;
 }
 
+/* By default, the hamburger and close icons are not displayed */
 .icon {
   display: none;
 }
@@ -94,6 +92,7 @@ h1 a:hover {
   cursor: default;
 }
 
+/* Bold header link for active page */
 .active-page {
   font-weight: bold;
   color: #EA89DC;
@@ -107,12 +106,23 @@ h1 a:hover {
 
 /* Main Content */
 
-body {
-  margin: 0px;
-  padding: 0px;
+.home-wrap {
+  display: flex;
+  border: 2px dashed black;
+  flex-direction: column;
 
 }
 
+#real-life {
+  padding-bottom: 15px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Remove underlines from abbreviations */
 abbr {
   text-decoration: none;
 }
@@ -125,6 +135,7 @@ a:hover {
   color: #097563;
 }
 
+/* Skip to main content button */
 .skip-link {
   background: black;
   color: #e3e3e3;
@@ -136,6 +147,7 @@ a:hover {
   transition: 0.3s;
 }
 
+/* Move skip button to viewable window when active */
 .skip-link:focus {
   transform: translateY(0%);
 }
@@ -145,10 +157,6 @@ main {
   padding: 20px;
   font-size: 18px;
 }
-
-
-
-
 
 /* Hero Image for home page */
 
@@ -183,15 +191,13 @@ main {
   color: #E3E3E3;
 }
 
+
+/* The "Hey There" part */
+
 .tagline {
   font-size: 35px;
   color: #e3e3e3;
   margin-top: -30px;
-}
-
-.home-wrap {
-  display: flex;
-  border: 2px dashed black;
 }
 
 .home-welcome {
@@ -249,6 +255,7 @@ main {
   margin-top: 30px;
 }
 
+/* Giant return to home button */
 .error-content a {
   margin: auto;
   display: flex;
@@ -278,6 +285,7 @@ footer {
   padding: 10px;
 }
 
+/* The text explaining that this site is by me / copyright and all that */
 .footer-intro {
   display: flex;
   align-items: center;
@@ -288,6 +296,8 @@ footer {
   padding-top: 7px;
   text-align: center;
 }
+
+/* Links under the icons...make them inline and horizontal */
 
 .footer-links, .footer-links li {
   display: flex;
@@ -328,6 +338,8 @@ footer {
   justify-content: center;
   font-size: 30px;  
 }
+
+/* Specific icon styles */
 
 .fa {
   width: 30px;
@@ -427,17 +439,29 @@ footer {
     width: 200px;
     padding: 20px;
   }
+
+  #real-life {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .home-pic img {
     width: 300px;
   }
+
+  #real-life {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-image-home {
     padding-top: 600px;
+  }
+
+  #real-life {
+    padding: 0;
   }
 }
 
@@ -456,5 +480,9 @@ footer {
 
   header {
     height: 10%;
+  }
+
+  #real-life {
+    padding: 0;
   }
 }

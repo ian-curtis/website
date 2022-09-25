@@ -1,3 +1,6 @@
+// Show/Hide Navigation Menu for mobile
+
+// Define some variables
 const menu = document.querySelector(".nav-menu-mobile");
 const menuItems = document.querySelectorAll(".nav-item");
 const hamburger= document.querySelector(".icon");
@@ -18,21 +21,15 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", toggleMenu);
 
-
+// Close menu when header links are clicked
 menuItems.forEach( 
   function(menuItem) { 
     menuItem.addEventListener("click", toggleMenu);
   }
 );
 
-$(document).ready(function () {
-  navBarMobile();//run when page first loads
-});
-
-$(window).resize(function () {
-  navBarMobile();//run on every window resize
-});
-
+// Turn off mobile navigation menu styling when at a large enough screen size
+// Regular menu requires no additional CSS
 function navBarMobile (){
   var screenWidthBig = window.matchMedia("(min-width: 771px)");
   var screenWidthSmall = window.matchMedia("(max-width: 770px)");
@@ -43,3 +40,13 @@ function navBarMobile (){
     $(".nav-menu").addClass("nav-menu-mobile")
   }
 }
+
+// Check screen width when page first loads
+$(document).ready(function () {
+  navBarMobile();
+});
+
+// Check screen width when browser is resized
+$(window).resize(function () {
+  navBarMobile();
+});

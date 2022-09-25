@@ -31,6 +31,7 @@
   padding: 0 10px;
 }
 
+/* Main box that appears before boxes of content */
 .cv-intro {
   display: block;
   margin: auto;
@@ -42,6 +43,7 @@
   border: 3px dotted black;
 }
 
+/* Arrange info boxes in one column */
 .cv-box-wrap {
   display: flex;
   flex-direction: column;
@@ -53,11 +55,13 @@
   border: 3px solid black;
 }
 
+/* Add spacing between boxes, except for last one */
 .cv-box:not(:last-child) {
   margin-bottom: 10px;
 }
 
 @media screen and (min-width:771px) {
+  /* Allow boxes to be in rows now */
   .cv-box-wrap {
     flex-direction: row;
     flex-wrap: wrap;
