@@ -1,6 +1,6 @@
 # Sources
 
-Here are some sources I drew from when designing my website. Probably not necessary, but these pages certainly deserve credit for helping me on my way. I learned a great many things from the internet while designing this website.
+Here are some sources I drew from when designing my website. Perhaps not necessary, but these pages certainly deserve credit for helping me on my way. I learned a great many things from the internet while designing this website.
 
 * [Responsive hamburger menu](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci)
 * [Album art image grid](https://blog.logrocket.com/how-create-responsive-image-gallery-css-flexbox/)
