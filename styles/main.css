@@ -89,7 +89,7 @@ header h1 a {
 
 h1 a:hover {
   color: #099392;
-  cursor: default;
+  /* cursor: default; */
 }
 
 /* Bold header link for active page */
