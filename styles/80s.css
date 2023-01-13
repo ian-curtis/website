@@ -1,0 +1,56 @@
+/* Override header and page settings from main */
+
+header a.icon {
+  color: #d4dbe1;
+  background: #744431;
+}
+
+a {
+  color: #711154;
+}
+
+a:hover {
+  color: #b6e5fc;
+}
+
+header {
+  background-color: #711154;
+}
+
+header h1 a{
+  color: #E3E3E3;
+}
+
+.nav-menu li a {
+  color: #E3E3E3;
+  text-decoration: none;
+}
+
+.nav-menu a:hover{
+  color: #86d5fc;
+}
+
+/* Add custom button styles */
+
+
+.back-button {
+  color: #edebeb;
+  text-decoration: none;
+  background-color: #7304ff;
+  font-size: 17px;
+}
+
+.back-button:hover {
+  background-color: #fb138c;
+  color: black;
+}
+
+/* lyrics styles */
+
+.lyrics {
+  text-align: center;
+}
+
+.chorus {
+  color: #711154;
+}

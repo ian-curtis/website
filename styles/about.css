@@ -25,11 +25,11 @@
   flex-direction: column-reverse;
   justify-content: center;
   border: 2px dashed black;
-  text-align: center;
 }
 
 .about-me-content {
   padding: 0 30px;
+  text-align: center;
 }
 
 .me-pic {
