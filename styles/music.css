@@ -42,10 +42,13 @@ h1 {
 }
 
 .about-music {
-  text-align: center;
   padding-left: 20px;
   padding-right: 20px;
   width: 95%;
+}
+
+.music-text {
+  text-align: center;
 }
 
 /* Main music page album art grid */
@@ -198,6 +201,15 @@ h2 {
   main {
     padding-top: 100px;
   }
+
+  .about-track{
+    width: 70%;
+  }
+
+  .back-to-album img {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 @media screen and (min-width: 2560px) {
@@ -210,11 +222,7 @@ h2 {
   }
 
   .track-container {
-    margin-top: 50px;
-  }
-
-  .about-track {
-    flex-basis: 75%;
+    margin-top: 80px;
   }
 
   .back-to-album img {
