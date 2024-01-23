@@ -12,21 +12,22 @@
   transform: translateX(200%);
   transition: transform 0s;
   width: 50%;
-  padding: 7px 3px;
+  /* padding: 7px 3px; */
   z-index: 99;
   background: black;
   list-style: none;
   text-align: center;
-  width: 50%;
-  height: 100%;
-  margin-top: 30px;
+  height: 400px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 35px;
 }
 
 /* Move the menu from way off the page to viewable */
 .showMenu {
   transform: translateY(0);
   right: 0;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 /* Style the hamburger and close icon */
@@ -422,7 +423,7 @@ footer {
   opacity: .7;
 }
 
-@media screen and (min-width:771px) {
+@media screen and (min-width:907px) {
   
   header a.icon {
     display: none;
@@ -489,4 +490,13 @@ footer {
   #real-life {
     padding: 0;
   }
+}
+
+@media screen and (min-width:650px) and (max-width:907px) {
+  
+  .nav-menu-mobile {   
+    width: 40%;
+
+  }
+
 }

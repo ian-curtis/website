@@ -1,9 +1,9 @@
 /* Hero Image for CV page */
 
-.hero-image-cv {
+.hero-image-portfolio {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   margin: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/grand_canyon.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sunrise.jpg");
 
   /* Set a specific height */
   height: 50%;
@@ -13,70 +13,60 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 500px;
+  padding-top: 550px;
 }
 
-.hero-text {
-  width: 90%;
-  font-size: 50px;
-}
-
-.cv-content {
-  padding: 0 10px;
-}
-
-/* Main box that appears before boxes of content */
-.cv-intro {
-  display: block;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding: 20px;
-  width: 75%;
-  text-align: center;
-  border: 3px dotted black;
-}
-
-/* Arrange info boxes in one column */
-.cv-box-wrap {
+.portfolio-box-wrap {
   display: flex;
   flex-direction: column;
+  columns: 1;
 }
 
-.cv-box {
-  padding: 5px;
+.portfolio-box {
+  margin-top: 5px;
   text-align: center;
   border: 3px solid black;
+  width: 90%;
+  align-self: center;
+}
+
+.portfolio-box:hover {
+  background-color: #c5c5c5;
 }
 
 /* Add spacing between boxes, except for last one */
-.cv-box:not(:last-child) {
+/* .portfolio-box:not(:last-child) {
   margin-bottom: 10px;
+} */
+
+/* Correct hero text for screen sizes smaller than 425px */
+@media screen and (max-width:425px) {
+  
+  .hero-text h1{
+    font-size: 45px
+  }
+
 }
 
 @media screen and (min-width:771px) {
   /* Allow boxes to be in rows now */
-  .cv-box-wrap {
+  .portfolio-box-wrap {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
-  .cv-box {
-    width: 45%;
+  .portfolio-box {
+    width: 48%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .cv-intro {
-    width: 50%;
-  }
-
-  .hero-image-cv {
+  .hero-image-portfolio {
     padding-top: 600px;
   }
 
-  .cv-box {
-    width: 30%;
+  .portfolio-box {
+    width: 48%;
   }
 }
