@@ -499,6 +499,15 @@ footer {
   #real-life {
     padding: 0;
   }
+
+  .nav-item {
+    font-size: 40px
+  }
+
+  header h1 a {
+    font-size: 60px;
+    padding-left: 20px
+  }
 }
 
 @media screen and (min-width:650px) and (max-width:907px) {

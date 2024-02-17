@@ -45,3 +45,58 @@ h1 {
   margin-top: -10px;
   max-width: 90%
 }
+
+@media screen and (min-width: 768px) {
+  .port-item-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .port-item {
+    width: 47%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  main {
+    padding-top: 130px;
+    font-size: 20px
+  }
+
+  main h1 {
+    font-size: 60px
+  }
+
+  .port-item h2 {
+    font-size: 30px
+  }
+
+  .proj-year {
+    font-size: 35px
+  }
+
+}
+
+@media screen and (min-width: 2000px) {
+
+  main {
+    padding-top: 200px;
+    font-size: 30px
+  }
+
+  main h1 {
+    font-size: 80px
+  }
+
+  .port-item h2 {
+    font-size: 50px
+  }
+
+  .proj-year {
+    font-size: 45px
+  }
+
+}
