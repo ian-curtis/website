@@ -423,6 +423,15 @@ footer {
   opacity: .7;
 }
 
+/* Correct hero text for screen sizes smaller than 425px */
+@media screen and (max-width:425px) {
+  
+  .hero-text h1{
+    font-size: 45px
+  }
+
+}
+
 @media screen and (min-width:907px) {
   
   header a.icon {

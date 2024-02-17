@@ -1,0 +1,47 @@
+/* CSS for the individual pages */
+
+main {
+  padding-top: 100px
+}
+
+h1 {
+  text-align: center;
+}
+
+.port-item {
+  background-color: #c5c5c5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  align-items: center
+}
+
+.port-item h2 {
+  max-width: 95%
+}
+
+.port-item img {
+  width: 50%;
+  max-width: 200px;
+  margin: auto;
+}
+
+.proj-year {
+  margin-top: -30px;
+  font-size: 30px;
+}
+
+.proj-role {
+  margin-top: -40px
+}
+
+.proj-mentor {
+  margin-top: -30px;
+  max-width: 80%
+}
+
+.proj-info {
+  margin-top: -10px;
+  max-width: 90%
+}
