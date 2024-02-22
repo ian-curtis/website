@@ -31,8 +31,8 @@ menuItems.forEach(
 // Turn off mobile navigation menu styling when at a large enough screen size
 // Regular menu requires no additional CSS
 function navBarMobile (){
-  var screenWidthBig = window.matchMedia("(min-width: 771px)");
-  var screenWidthSmall = window.matchMedia("(max-width: 770px)");
+  var screenWidthBig = window.matchMedia("(min-width: 907px)");
+  var screenWidthSmall = window.matchMedia("(max-width: 908px)");
   if (screenWidthBig.matches) {
     $("ul").removeClass("nav-menu-mobile");
   }
