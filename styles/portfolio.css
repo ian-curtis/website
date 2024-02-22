@@ -29,6 +29,10 @@
   font-size: 20px;
 }
 
+main {
+  text-align: center;
+}
+
 .portfolio-box-wrap {
   display: flex;
   flex-direction: column;
