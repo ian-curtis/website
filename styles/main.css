@@ -107,6 +107,13 @@ h1 a:hover {
 
 /* Main Content */
 
+.subtitle {
+
+  font-size: 25px;
+  margin-top: -10px
+
+}
+
 .italics-title {
   font-style: italic;
 }
