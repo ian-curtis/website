@@ -24,7 +24,9 @@ hamburger.addEventListener("click", toggleMenu);
 // Close menu when header links are clicked
 menuItems.forEach( 
   function(menuItem) { 
-    menuItem.addEventListener("click", toggleMenu);
+    if (menu.classList.contains("showMenu")) {
+      menuItem.addEventListener("click", toggleMenu);
+    }
   }
 );
 

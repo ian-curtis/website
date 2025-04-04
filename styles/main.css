@@ -62,7 +62,7 @@ header {
 }
 
 /* By default, the hamburger and close icons are not displayed */
-.icon {
+.icon .close {
   display: none;
 }
 
@@ -97,10 +97,6 @@ h1 a:hover {
 .active-page {
   font-weight: bold;
   color: #EA89DC;
-}
-
-.icon .close {
-  display: none;
 }
 
 
