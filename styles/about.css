@@ -11,11 +11,11 @@
   height: 50%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: 40% 30%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 500px;
+  padding-top: 450px;
 }
 
 /* Main About Content, adds border around page */
